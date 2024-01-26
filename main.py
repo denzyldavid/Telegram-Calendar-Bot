@@ -186,4 +186,3 @@ if __name__ == '__main__':
   # polls
   print("polling...")
   app.run_polling(poll_interval=1)
-
