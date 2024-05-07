@@ -10,7 +10,7 @@ BOT_TOKEN = os.getenv('BOT_TOKEN')
 BOT_USERNAME: Final = '@denzyltestbot'
 
 db = DBHelper()
-
+ 
 
 def handle_updates(updates):
   for update in updates["result"]:
