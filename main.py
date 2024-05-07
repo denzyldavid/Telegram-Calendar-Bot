@@ -8,6 +8,7 @@ import os
 
 BOT_TOKEN = os.getenv('BOT_TOKEN')
 BOT_USERNAME: Final = '@denzyltestbot'
+print(BOT_TOKEN[0:5])
 
 db = DBHelper()
  
