@@ -2,7 +2,12 @@ from telegram.ext import Application, CommandHandler, MessageHandler, Conversati
 from datetime import datetime
 import commands, messages
 from dbhelper import DBHelper
-import bot_constants
+from typing import Final
+import os
+# import bot_constants
+
+BOT_TOKEN = os.getenv('BOT_TOKEN')
+BOT_USERNAME: Final = '@denzyltestbot'
 
 db = DBHelper()
 
