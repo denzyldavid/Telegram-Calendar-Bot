@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 from telegram.ext import Application, CommandHandler, MessageHandler, ConversationHandler, filters
 from datetime import datetime
 import commands, messages
@@ -14,7 +6,7 @@ from typing import Final
 import os
 # import bot_constants
 
-BOT_TOKEN = os.getenv('BOT_TOKEN')
+BOT_TOKEN = '6682971595:AAG51jKs1aaXLZ1Ft1u1UnNW2xajmLdZXVM' #os.getenv('BOT_TOKEN')
 BOT_USERNAME: Final = '@denzyltestbot'
 
 import logging
