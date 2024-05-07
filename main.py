@@ -42,14 +42,14 @@ def handle_updates(updates):
       pass
 
 
-# from fastapi import FastAPI
-# from starlette.requests import Request
-# from starlette.responses import Response
+from fastapi import FastAPI
+from starlette.requests import Request
+from starlette.responses import Response
 
-# app = FastAPI()
-# @app.post("/api/messages")
-# async def messages(req: Request) -> Response:
-#     return Response(content="Hello from Azure Functions!", media_type="text/plain")
+app = FastAPI()
+@app.post("/api/messages")
+async def messages(req: Request) -> Response:
+    return Response(content="Hello from Azure Functions!", media_type="text/plain")
 
 
 A, B, C, D, E = range(5)
