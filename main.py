@@ -43,8 +43,8 @@ def handle_updates(updates):
 
 
 A, B, C, D, E = range(5)
-
-if __name__ == '__main__':
+def main():
+# if __name__ == '__main__':
   db.setup()
   app = Application.builder().token(BOT_TOKEN).build()
 
