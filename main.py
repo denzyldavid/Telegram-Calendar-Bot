@@ -8,7 +8,10 @@ import os
 
 BOT_TOKEN = os.getenv('BOT_TOKEN')
 BOT_USERNAME: Final = '@denzyltestbot'
-print(BOT_TOKEN[0:5])
+if BOT_TOKEN is not None and BOT_TOKEN.startswith('668'):
+    print("BOT_TOKEN starts with '668'")
+else:
+    print("BOT_TOKEN either is not set or does not start with '668'")
 
 db = DBHelper()
  
