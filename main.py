@@ -8,10 +8,18 @@ import os
 
 BOT_TOKEN = os.getenv('BOT_TOKEN')
 BOT_USERNAME: Final = '@denzyltestbot'
+
+import logging
+
+# Configure logging
+logging.basicConfig(filename='bot.log', level=logging.INFO)
+
+
+# Check if BOT_TOKEN starts with '668'
 if BOT_TOKEN is not None and BOT_TOKEN.startswith('668'):
-    print("BOT_TOKEN starts with '668'")
+    logging.info("BOT_TOKEN starts with '668'")
 else:
-    print("BOT_TOKEN either is not set or does not start with '668'")
+    logging.warning("BOT_TOKEN either is not set or does not start with '668'")
 
 db = DBHelper()
  
