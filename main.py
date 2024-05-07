@@ -34,7 +34,7 @@ A, B, C, D, E = range(5)
 
 if __name__ == '__main__':
   db.setup()
-  app = Application.builder().token(bot_constants.TOKEN).build()
+  app = Application.builder().token(BOT_TOKEN).build()
 
   print(datetime.now())
 
